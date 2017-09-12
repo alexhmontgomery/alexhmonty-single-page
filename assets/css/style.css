@@ -1,18 +1,12 @@
 
-/* /////////////////////////////////////////////////////////////////////
-//  01 - Universal
-/////////////////////////////////////////////////////////////////////*/
-
 html, body {
     height:100%;
 }
 
 body {
 	font-family: 'Lato', sans-serif;
-  /*font-family: 'Oranienbaum', sans-serif;*/
 }
 h1,h2,h3,h4,h5,h6 {
-	/*font-family: 'Dosis', sans-serif;*/
   font-family: 'Oranienbaum', sans-serif;
 }
 a {
@@ -63,10 +57,9 @@ a:hover,a:active,a:focus{
     margin-right: -42%;
 }
 
-
-/* /////////////////////////////////////////////////////////////////////
-//  02 - Header
-/////////////////////////////////////////////////////////////////////*/
+/*///////////
+// Header
+///////////*/
 
 header{
 	background: url(../images/houston-bandw.png) no-repeat;
@@ -79,7 +72,7 @@ header{
     color: #fff;
 }
 .ahm-logo {
-  padding: 0% 0% 0% 2%;
+  padding: 0% 0% 0% 1%;
   height: 15vh;
   transition: all 2s;
   cursor: pointer;
@@ -89,7 +82,6 @@ header{
   transform: rotateX(360deg);
 }
 .bigheadline {
-	/*font-family: 'Raleway', sans-serif;*/
   font-family: 'Oranienbaum', sans-serif;
 	font-weight: 500;
 	font-size: 8em;
@@ -114,10 +106,9 @@ header{
 	transition: 0.4s ease all;
 }
 
-
-/* /////////////////////////////////////////////////////////////////////
-//  03 - Navigation
-/////////////////////////////////////////////////////////////////////*/
+/*///////////
+// Navigation
+///////////*/
 
 #navigation{
 	background: #111;
@@ -189,12 +180,45 @@ header{
 	margin-right: 23px;
 }
 
+/*///////////
+// About
+///////////*/
 
-/* /////////////////////////////////////////////////////////////////////
-//  04 - Skillset
-/////////////////////////////////////////////////////////////////////*/
+#about {
+    background-color: #34495e;
+    padding: 80px 0px 80px 0px;
+    color: #fff;
+}
 
+.about-block {
+    text-align: center;
+}
+.about-block img {
+    border-radius: 50%;
+    /*border: 1px solid #FFFFFF;*/
+    max-width: 200px;
+    max-height: 200px;
+    margin-bottom: 30px;
+}
+.about-block p {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+}
+.about-block strong {
+    font-size: 2em;
+}
 
+.about-block a {
+    cursor: pointer;
+}
+
+/*///////////
+// Skillset
+///////////*/
 
 .skillset {
     max-width: 293px;
@@ -253,9 +277,9 @@ header{
 	color: #fff;
 }
 
-/* /////////////////////////////////////////////////////////////////////
-//  05 - Portfolio
-/////////////////////////////////////////////////////////////////////*/
+/*///////////
+// Portfolio
+///////////*/
 
 
 #portfolio {
@@ -286,16 +310,6 @@ header{
 	position: relative;
 }
 
-/*#port-1 {
-  background-image: url(../images/port-calculator.png);
-  background-position: center;
-}
-
-#port-2 {
-  background-image: url(../images/port-hangman.png);
-  background-position: center;
-}*/
-
 .port figcaption {
 	position: absolute;
 	top: 0;
@@ -310,10 +324,6 @@ header{
 	padding: 0;
 	color: #fff;
 }
-
-/*.port figcaption span:before {
-	content: 'by ';
-}*/
 
 .port figcaption a {
 	text-align: center;
@@ -399,44 +409,10 @@ header{
     margin-bottom: 30px;
 }
 
-/* /////////////////////////////////////////////////////////////////////
-//  06 - About
-/////////////////////////////////////////////////////////////////////*/
 
-#about {
-    /*background: url(../images/parallax.jpg);*/
-    background-color: #34495e;
-    padding: 80px 0px 80px 0px;
-    color: #fff;
-    /*background-attachment: fixed;
-    background-size: cover;*/
-}
-
-.about-block {
-    text-align: center;
-}
-.about-block img {
-    border-radius: 50%;
-    /*border: 1px solid #FFFFFF;*/
-    max-width: 200px;
-    max-height: 200px;
-    margin-bottom: 30px;
-}
-.about-block p {
-    max-width: 60%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    font-style: italic;
-    font-size: 18px;
-}
-.about-block strong {
-    font-size: 2em;
-}
-
-
-/* /////////////////////////////////////////////////////////////////////
-//  07 - Contact
-/////////////////////////////////////////////////////////////////////*/
+/*///////////
+// Contact
+///////////*/
 
 
 #contact {
@@ -504,9 +480,11 @@ header{
     color: #FFF;
 }
 
-/*Social media links*/
+/*///////////
+// Resume
+///////////*/
 
-#social {
+#resume {
     background-color: rgba(0, 0, 0, 0.75) !important;
     padding: 30px 0px 30px 0px;
     position: relative;
@@ -517,51 +495,23 @@ header{
     font-weight: 100;
     padding-bottom: 10px;
     border-bottom: 1px solid;
-    max-width: 300px;
+    max-width: 400px;
     margin: 0 auto;
     margin-bottom: 30px;
 }
-.scoialinks {
+.resumelink {
     list-style: none;
     text-align: center;
     padding: 0;
 }
-.social-icons {
+.resume-icons {
     display: inline-block;
     padding: 0px 5px;
 }
-.social-icons a {
-    display: block;
-    width: 50px;
-    height: 50px;
-    background-size: 100% 200%;
-}
 
-.social-icons a:hover {
-    background-position: 0px -50px;
-}
-.facebook{
-	background-image: url(../images/facebook.png);
-}
-.twitter{
-	background-image: url(../images/twitter.png);
-}
-.google-plus{
-	background-image: url(../images/google-plus.png);
-}
-.linkedin{
-	background-image: url(../images/linkedin.png);
-}
-.wordpress{
-	background-image: url(../images/wordpress.png);
-}
-
-
-/* /////////////////////////////////////////////////////////////////////
-//  08 - Footer
-/////////////////////////////////////////////////////////////////////*/
-
-
+/*///////////
+// Footer
+///////////*/
 
 footer {
     width: 100%;
@@ -571,7 +521,7 @@ footer {
 .copyright {
     margin: 0;
     padding: 20px 0px;
-    text-align: left;
+    text-align: right;
 }
 .designed {
     margin: 0;
@@ -582,13 +532,9 @@ footer {
     color: #e66f69;
 }
 
-
-
-/* /////////////////////////////////////////////////////////////////////
-//  09 - Responsive Fixes
-/////////////////////////////////////////////////////////////////////*/
-
-
+/*///////////
+// Responsive
+///////////*/
 
 @media all and (min-width: 1400px) {
 	.centered p {
@@ -647,7 +593,8 @@ footer {
 		background-attachment: fixed;
 		background-position: 50% -50px;
 	}
-}
+
+  }
 
 @media all and (max-width: 768px) {
 	.skillset {
@@ -685,6 +632,14 @@ footer {
 	    top: 70%;
 	    left: 46%;
 	}
+
+  .port figcaption {
+    opacity: 0.1;
+  	position: absolute;
+    top: 0;
+    opacity: 1;
+  }
+
 }
 @media all and (max-width: 380px) {
 
